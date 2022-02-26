@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> eek 5-2 </title>
+	<style type="text/css">
+
+	div{width: 300px; height: 300px; border: 1px solid; /*display: inline-block;*/}
+
+	p#blue{color: blue;}
+	p#red{color: red;}
+	p#magenta{color: magenta}
+	p{color: brown}
+	p.orange{color: orange}
+	/*.italic{font-style: italic;}*/
+	#first span, #first b{font-style: italic;}
+	/* descendant multiple selector*/
+	
+	/*p.green{color: green; font-size: 1.5em}*/
+	div>p{color: green; font-size: 1.5em;} 
+
+
+	/* yg di atascild selector
+	div p{color: green; font-size: 1.5em;} child selector*/
+
+	/*em is when default font size is multiplied twice of the . fdeault font u know like when 16 x 16*/
+
+/*bc there is id, id selector has the higher priority - id has the highest priority when class is also there - and in line style > everything else*/
+
+/* order of priority: inline style > id > class > the element*/
+
+	</style>
+
+</head>
+<body>
+	
+<!-- <div>
+	
+<p id="blue">Im the first p, make me blue color</p>
+<p id="red" class="orange" style="color: violet"> Im the second p, make me red color 
+		
+	<p class="orange"> Im the second p, make me red color
+	<p id="magenta"> Im the first of the second p. yellow</p>
+
+	</p>
+	<p>Im the third p</p>
+</div>
+ -->
+<!-- <div>
+	<p class="green">1</p>
+	<p class="green">2</p>
+		<p> 3
+	<p class="green">3.1</p>
+	<p class="green">3.2</p>
+		</p>
+	<span>I  am span 1</span>
+	</div>-->
+
+
+<div id="first">
+	<p>1</p>
+	<p>2</p>
+		<span> 3
+	<p>3.1</p>
+	<p>3.2</p>
+		</span>
+
+<!-- 	<span class="italic">I am span 1 <p>p in span</p></span>
+	<b class="italic">I am bold</b> -->
+
+	<span>I am span 1 <p>p in span</p></span>
+	<b>I am bold</b>
+</div>
+<div>
+	<p>p in the div</p>
+	<span>span in 2nd div</span>
+	<b>I am bold</b>
+</div>
+<!-- 
+<div>
+	<p>p in the div</p>
+</div> -->
+</body>
+</html>
